@@ -1,20 +1,28 @@
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
-using namespace std;	// programmer: Kels Cavin
+using namespace std;	// programmer: Kels (Kelsey) Cavin
 
 bool isFeasible(int x, int y) {
-    if ((12 * x + 4 * y <= 156) && (7 * x + 3 * y <= 116)) {
-        return true;
-    }
-    else {
+    //fail fast
+    if (x <= 0 || y <= 0) {
         cout << "\nproduction schedule is not feasible\n" << endl;
+        cout << "\nmaterial qty must be greater than 0.\n" << endl;
         return false;
     }
+    if ((12 * x + 4 * y >= 156) && (7 * x + 3 * y >= 116)) {
+        cout << "\nproduction schedule is not feasible\n" << endl;
+        cout << "\nmaterial qty exceeds available materials.\n" << endl;
+        return false;
+    }
+    return true;
 }
 
 bool ProfitIsValid(int profit) {
-
+    if (profit < 20) {
+        return false;
+    }
+    return true;
 }
 
 int CalculateProfit(int x, int y) {
@@ -22,14 +30,19 @@ int CalculateProfit(int x, int y) {
 }
 
 void FindProfit(int x, int y) {
-    if (isFeasible)
+    int const profit = CalculateProfit(x, y);
+
+    if (isFeasible(x,y))
     {
         cout << "the production schedule is feasible" << endl;
         cout << "and the profit yielded by this schedule is $"
             << setiosflags(ios::fixed | ios::showpoint)
-            << setprecision(2) << CalculateProfit(x,y) << endl;
+            << setprecision(2) << profit << endl;
+        if (!ProfitIsValid(profit)) {
+            cout << "profit is below $20.00 which is not reccomended" << endl;
+            cout << "consider optimizing this production schedule." << endl;
+        }
     }
-
 }
 
 int main()
@@ -64,6 +77,7 @@ int main()
         cin >> answer;
         system("CLS");
     } while (answer == 'Y' || answer == 'y');
+
     return 0;
 }
 
