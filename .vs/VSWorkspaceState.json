@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Examples",
+    "\\Examples\\Pointers",
+    "\\Examples\\Time"
   ],
-  "SelectedNode": "\\Time.sln",
+  "SelectedNode": "\\Examples\\Pointers\\pointers.cpp",
   "PreviewInSolutionExplorer": false
 }
