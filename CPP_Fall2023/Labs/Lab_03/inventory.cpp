@@ -8,6 +8,8 @@
 #include <iostream>
 #include <string>
 #include <time.h>
+#include <iomanip>
+
 using namespace std;
 
 class Inventory
@@ -17,74 +19,123 @@ public:
 	int itemsNum[100];
 	char itemsChar[100];
 	double itemsCosts[100];
+	int iterableInventory;
+
+	void setIterableInventory(int max) {
+		this->iterableInventory = max;
+	}
+
+	void setItemsNum(int iterator, int value) {
+		this->itemsNum[iterator] = value;
+	}
+
+	void setItemsChar(int iterator, char value) {
+		this->itemsChar[iterator] = value;
+	}
+
+	void setItemsCost(int iterator, double value) {
+		this->itemsCosts[iterator] = value;
+	}
+
+	double getTotalCost() {
+		int ans=0;
+		for (int i = 0; i < iterableInventory; i++) {
+			ans += this->itemsCosts[i];
+		}
+		return ans;
+	}
 };
 
-// global arrays / variables
-int max1;
-int letters[100];
-int numbers[100];
-double costs[100];
-// function prototypes
-void GenerateRandomLetters();
-void GenerateRandomNumbers();
-void GenerateRandomCosts();
+class Valuation {
+public:
+	Inventory inv;
+
+	Valuation(Inventory &inv) {
+		this->inv = inv;
+	}
+
+	void EvaluateWeightedAverage() {
+		double weighted = 0;
+		double totalCost = inv.getTotalCost();
+		weighted = totalCost/(double)inv.iterableInventory;
+		cout << totalCost;
+		cout << "Total weighted average unit cost = $" << setprecision(2) << fixed << weighted << endl;
+	}
+};
+
+//Removed global variables; no longer needed, encapsulated in Inventory object
+
+void GenerateRandomLetters(Inventory &inv);
+void GenerateRandomNumbers(Inventory &inv);
+void GenerateRandomCosts(Inventory &inv);
+void InputItemsInInventory(Inventory& inv);
 
 int main()
 {
 	// seed for the random number generator
 	srand(time(NULL));
-	GenerateRandomLetters();
-	GenerateRandomNumbers();
-	Inventory inv;
-	for (int i = 0; i <= max1; i++)
-	{
-		inv.itemsNum[i] = numbers[i];
-		inv.itemsChar[i] = letters[i];
-	}
+
+	Inventory inv{};
+
+	InputItemsInInventory(inv);
+	GenerateRandomLetters(inv);
+	GenerateRandomNumbers(inv);
+	GenerateRandomCosts(inv);
+
+	Valuation val(inv);
+	val.EvaluateWeightedAverage();
+
 	system("PAUSE");
 	return 0;
 }
 
-void GenerateRandomLetters()
+void InputItemsInInventory(Inventory& inv) {
+	int units = 0;
+	cout << "How many items in the inventory?" << endl;
+	cin >> units;
+	inv.setIterableInventory(units);
+}
+
+void GenerateRandomLetters(Inventory &inv)
 {
 	char randChar = '\0';
-	int counter = 0;
 	int randNum = 0;
-	int maxLetters = 0;
-	cout << "How many items in the inventory?" << endl;
-	cin >> maxLetters;
-	for (counter = 0; counter < maxLetters; counter++)
+
+	for (int i = 0; i < inv.iterableInventory; i++)
 	{
-		// select a number between 0 and 25
 		randNum = 26 * (rand() / (RAND_MAX + 1.0));
-		// use ASCII code with 'a' = 97
-		// for lower case letters
 		randNum = randNum + 97;
-		// type cast to character
 		randChar = (char)randNum;
-		letters[counter] = randChar;
+
+		inv.setItemsChar(i, randChar);
+
 		printf("Inventory Item: %c\n", randChar);
 	}
 }
-void GenerateRandomNumbers()
+
+void GenerateRandomNumbers(Inventory &inv)
 {
-	int counter = 0;
-	int maxNums = 0;
 	int randNum = 0;
-	cout << "How many numbers to simulate the inventory?" <<
-		endl;
-	cin >> maxNums;
-	max1 = maxNums;
-	for (counter = 0; counter < maxNums; counter++)
+	for (int i = 0; i < inv.iterableInventory; i++)
 	{
 		randNum = 100 * (rand() / (RAND_MAX + 1.0));
-		numbers[counter] = randNum;
+		inv.setItemsNum(i, randNum);
 		printf("Item Quantity: %d\n", randNum);
 	}
 }
 
-void GenerateRandomCosts() {
-	//essentially just want to generate a bunch of random doubles
-	int inputMaximum;
-	cout << ""
+void GenerateRandomCosts(Inventory &inv) {
+	srand(time(NULL));
+
+	double fMin = 20000.00, fMax = 0.00;
+	double f = 0.00;
+	double cost = 0.00;
+
+	for (int i = 0; i < inv.iterableInventory; i++)
+	{
+		f = (double)rand() / RAND_MAX;
+		cost = ceil(fMin + f * (fMax - fMin)) / 100;
+		inv.setItemsCost(i, cost);
+		cout << "Item Cost = $" << setprecision(2) << fixed << cost << endl;
+	}
 }
