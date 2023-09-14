@@ -38,7 +38,7 @@ public:
 	}
 
 	double getTotalCost() {
-		int ans=0;
+		double ans=0;
 		for (int i = 0; i < iterableInventory; i++) {
 			ans += this->itemsCosts[i];
 		}
@@ -103,7 +103,7 @@ void GenerateRandomLetters(Inventory &inv)
 
 	for (int i = 0; i < inv.iterableInventory; i++)
 	{
-		randNum = 26 * (rand() / (RAND_MAX + 1.0));
+		randNum = 26 * (int) (rand() / (RAND_MAX + 1.0));
 		randNum = randNum + 97;
 		randChar = (char)randNum;
 
@@ -118,7 +118,7 @@ void GenerateRandomNumbers(Inventory &inv)
 	int randNum = 0;
 	for (int i = 0; i < inv.iterableInventory; i++)
 	{
-		randNum = 100 * (rand() / (RAND_MAX + 1.0));
+		randNum = 100 * (int) (rand() / (RAND_MAX + 1.0));
 		inv.setItemsNum(i, randNum);
 		printf("Item Quantity: %d\n", randNum);
 	}

@@ -1,7 +1,4 @@
 ﻿  inventory.cpp
-C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\inventory.cpp(43,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
 C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\inventory.cpp(76,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\inventory.cpp(106,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\inventory.cpp(121,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\inventory.cpp(128,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Lab_03.vcxproj -> C:\Users\kcavin4\Documents\tmp\CPP_Fall23\CPP_Fall2023\Labs\Lab_03\x64\Debug\Lab_03.exe
