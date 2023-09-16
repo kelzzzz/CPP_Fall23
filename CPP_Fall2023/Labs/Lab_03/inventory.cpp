@@ -58,7 +58,6 @@ public:
 		double weighted = 0;
 		double totalCost = inv.getTotalCost();
 		weighted = totalCost/(double)inv.iterableInventory;
-		cout << totalCost;
 		cout << "Total weighted average unit cost = $" << setprecision(2) << fixed << weighted << endl;
 	}
 };
@@ -69,6 +68,10 @@ void GenerateRandomLetters(Inventory &inv);
 void GenerateRandomNumbers(Inventory &inv);
 void GenerateRandomCosts(Inventory &inv);
 void InputItemsInInventory(Inventory& inv);
+
+int getRandomInt();
+double getRandomDouble();
+char getRandomChar();
 
 int main()
 {
@@ -96,16 +99,28 @@ void InputItemsInInventory(Inventory& inv) {
 	inv.setIterableInventory(units);
 }
 
+int getRandomInt() {
+	int random;
+	random = 100 * (rand() / (RAND_MAX + 1.0));
+	return random;
+}
+
+double getRandomDouble() { return 0; }
+
+char getRandomChar() {
+	int random;
+	random = 26 * (rand() / (RAND_MAX + 1.0));
+	random = random + 97;
+	return (char)random;
+}
+
 void GenerateRandomLetters(Inventory &inv)
 {
 	char randChar = '\0';
-	int randNum = 0;
 
 	for (int i = 0; i < inv.iterableInventory; i++)
 	{
-		randNum = 26 * (int) (rand() / (RAND_MAX + 1.0));
-		randNum = randNum + 97;
-		randChar = (char)randNum;
+		randChar = getRandomChar();
 
 		inv.setItemsChar(i, randChar);
 
@@ -118,15 +133,13 @@ void GenerateRandomNumbers(Inventory &inv)
 	int randNum = 0;
 	for (int i = 0; i < inv.iterableInventory; i++)
 	{
-		randNum = 100 * (int) (rand() / (RAND_MAX + 1.0));
+		randNum = getRandomInt();
 		inv.setItemsNum(i, randNum);
 		printf("Item Quantity: %d\n", randNum);
 	}
 }
 
 void GenerateRandomCosts(Inventory &inv) {
-	srand(time(NULL));
-
 	double fMin = 20000.00, fMax = 0.00;
 	double f = 0.00;
 	double cost = 0.00;
