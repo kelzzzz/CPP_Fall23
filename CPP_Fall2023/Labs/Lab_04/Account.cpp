@@ -4,6 +4,9 @@
 float Account::getBalance() {
     return balance;
 }
+float Account::getAccruedInterest() {
+    return accruedInterest;
+}
 bool Account::validateBalance(float validate)
 {
     if (this->balance >= validate) {
@@ -43,6 +46,14 @@ void Account::deposit(float deposit)
     this->lastBalance = 0;
     this->lastBalance += this->balance;
     this->balance += deposit;
+        //+ accrueInterest(this->balance);
     }
+}
+
+float Account::accrueInterest(float balance) {
+    float interest = 0;
+    interest += balance * .0002;
+    this->accruedInterest += interest;
+    return interest;
 }
 

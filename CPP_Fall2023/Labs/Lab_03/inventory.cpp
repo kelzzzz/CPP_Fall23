@@ -70,14 +70,12 @@ void GenerateRandomCosts(Inventory &inv);
 void InputItemsInInventory(Inventory& inv);
 
 int getRandomInt();
-double getRandomDouble();
 char getRandomChar();
 
 int main()
 {
 	// seed for the random number generator
 	srand(time(NULL));
-
 	Inventory inv{};
 
 	InputItemsInInventory(inv);
@@ -105,8 +103,6 @@ int getRandomInt() {
 	return random;
 }
 
-double getRandomDouble() { return 0; }
-
 char getRandomChar() {
 	int random;
 	random = 26 * (rand() / (RAND_MAX + 1.0));
@@ -121,9 +117,7 @@ void GenerateRandomLetters(Inventory &inv)
 	for (int i = 0; i < inv.iterableInventory; i++)
 	{
 		randChar = getRandomChar();
-
 		inv.setItemsChar(i, randChar);
-
 		printf("Inventory Item: %c\n", randChar);
 	}
 }

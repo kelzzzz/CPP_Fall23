@@ -1,1 +1,2 @@
 C:\Users\kcavin4\Documents\Lab_04\x64\Debug\Lab_04.exe
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_04\x64\Debug\Lab_04.exe

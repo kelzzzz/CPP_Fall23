@@ -69,6 +69,7 @@ void LabRunner::printReport()
     std::cout << "############# REPORT #############\n";
     std::cout << "Previous account balance: $" << this->account->lastBalance << "\n";
     std::cout << "Your new balance: $" << this->account->getBalance() << "\n";
+   // std::cout << "Interest Accrued To Date: $" << this->account->getAccruedInterest() << "\n";
     std::cout << "##################################\n";
 }
 

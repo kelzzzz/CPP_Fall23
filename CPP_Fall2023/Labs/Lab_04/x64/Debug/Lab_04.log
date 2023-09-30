@@ -1,2 +1,5 @@
-﻿  LabRunner.cpp
-  Lab_04.vcxproj -> C:\Users\kcavin4\Documents\Lab_04\x64\Debug\Lab_04.exe
+﻿  Account.cpp
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_04\Account.cpp(55,25): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  LabRunner.cpp
+  Generating Code...
+  Lab_04.vcxproj -> C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_04\x64\Debug\Lab_04.exe
