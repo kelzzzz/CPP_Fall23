@@ -30,12 +30,12 @@ bool Account::validateInput(float validate)
 }
 
 
-void Account::withdraw(float withdrawl)
+void Account::withdraw(float withdrawal)
 {
-    if (validateBalance(withdrawl) && validateInput(withdrawl)) {
+    if (validateBalance(withdrawal) && validateInput(withdrawal)) {
      this->lastBalance = 0;
      this->lastBalance += this->balance;
-     this->balance -= withdrawl;
+     this->balance -= withdrawal;
     }
 }
 
@@ -45,8 +45,7 @@ void Account::deposit(float deposit)
     if (validateInput(deposit)) {
     this->lastBalance = 0;
     this->lastBalance += this->balance;
-    this->balance += deposit;
-        //+ accrueInterest(this->balance);
+    this->balance += deposit + accrueInterest(this->balance);
     }
 }
 
