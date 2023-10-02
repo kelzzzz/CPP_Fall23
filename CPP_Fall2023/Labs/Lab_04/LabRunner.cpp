@@ -20,7 +20,7 @@ void LabRunner::run()
     }
 
     do {
-        std::cout << "D for deposit, W for withdrawl\n";
+        std::cout << "D for deposit, W for withdrawal\n";
         std::cin >> state;
 
         switch (state) {
@@ -33,7 +33,7 @@ void LabRunner::run()
 
         case('w'):
         case('W'):
-            strcpy_s(stateDescription, "Withdrawl");
+            strcpy_s(stateDescription, "Withdraw");
             obtainData(state);
             printReport();
             break;
@@ -57,7 +57,7 @@ void LabRunner::obtainData(char state)
         account->deposit(input);
     }
     else if (state == 'W' || state == 'w') {
-        std::cout << "How much would you like to withdrawl?\n";
+        std::cout << "How much would you like to withdraw?\n";
         std::cin >> input;
         account->withdraw(input);
     }
@@ -69,7 +69,7 @@ void LabRunner::printReport()
     std::cout << "############# REPORT #############\n";
     std::cout << "Previous account balance: $" << this->account->lastBalance << "\n";
     std::cout << "Your new balance: $" << this->account->getBalance() << "\n";
-   // std::cout << "Interest Accrued To Date: $" << this->account->getAccruedInterest() << "\n";
+    std::cout << "Interest Accrued To Date: $" << this->account->getAccruedInterest() << "\n";
     std::cout << "##################################\n";
 }
 

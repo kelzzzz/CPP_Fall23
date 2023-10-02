@@ -7,7 +7,7 @@ public:
 	bool validateBalance(float validate);
 	bool validateInput(float validate);
 	float accrueInterest(float balance);
-	void withdraw(float withdrawl);
+	void withdraw(float withdrawal);
 	void deposit(float deposit);
 	float lastBalance=0;
 
