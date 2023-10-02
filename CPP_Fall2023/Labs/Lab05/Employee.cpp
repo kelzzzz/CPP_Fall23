@@ -1,10 +1,16 @@
 #include "Employee.h"
 #include <time.h>
-#include <iostream>
+#include <iostream>;
+
+Employee::Employee()
+{
+}
 Employee::Employee(std::string name)
 {
+	srand(time(NULL));
 	this->empName = name;
 	this->empID = generateEmpId();
+	std::cout << "Employee object constructed.\n";
 }
 
 void Employee::Display()
@@ -13,6 +19,8 @@ void Employee::Display()
 	std::cout << "ID: " << this->empID << "\n";
 	std::cout << "Rate: $" << this->hourlyRate << "\n";
 	std::cout << "Hours worked: " << this->hoursWorked << " hrs\n";
+	std::cout << "Gross pay: $" << this->getGrossPay() << "\n";
+
 }
 
 void Employee::setEmpID(std::string set)
@@ -60,8 +68,6 @@ std::string Employee::generateEmpId() //in real world you wouldn't want two of t
 {
 	int code[6];
 	code[5] = 1;
-
-	srand(time(NULL));
 
 	for (int i = 0; i < 5; ++i)
 		code[i] = rand() % 10;

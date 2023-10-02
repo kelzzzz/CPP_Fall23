@@ -1,5 +1,4 @@
 ﻿  Employee.cpp
-C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab05\Employee.cpp(64,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Lab05.cpp
-  Generating Code...
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab05\Employee.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab05\Employee.cpp(10,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Lab05.vcxproj -> C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab05\x64\Debug\Lab05.exe

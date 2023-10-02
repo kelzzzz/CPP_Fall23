@@ -3,6 +3,7 @@
 class Employee
 {
 public:
+	Employee();
 	Employee(std::string name);
 	void Display();
 	void setEmpID(std::string set);
