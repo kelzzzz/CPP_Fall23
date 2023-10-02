@@ -8,8 +8,9 @@ public:
 	float getGrossPay();
 	float getAnnualSalary();
 	void setAnnualSalary(float annual);
-
+	void applyBonus();
 private:
 	float annualSalary;
+	float bonus;
 };
 

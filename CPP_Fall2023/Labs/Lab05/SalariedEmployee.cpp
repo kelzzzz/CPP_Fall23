@@ -12,8 +12,10 @@ void SalariedEmployee::Display()
 {
 	std::cout << "Name: " << this->empName << "\n";
 	std::cout << "ID: " << this->empID << "\n";
-	std::cout << "Annual Salary: $" << this->annualSalary << "\n";
+	applyBonus();
+	std::cout << "Annual Salary: $" << this->annualSalary + bonus << "\n";
 	std::cout << "Gross pay: $" << this->getGrossPay() << "\n";
+	std::cout << "Annual Bonus: $" << this->bonus;
 
 }
 
@@ -30,4 +32,7 @@ float SalariedEmployee::getAnnualSalary()
 void SalariedEmployee::setAnnualSalary(float annual)
 {
 	this->annualSalary = annual;
+}
+void SalariedEmployee::applyBonus() {
+	this->bonus = annualSalary * .005;
 }
