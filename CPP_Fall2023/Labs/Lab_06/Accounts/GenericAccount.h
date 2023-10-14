@@ -17,7 +17,7 @@ public:
 	//methods
 	const bool validateBalance(float validate);
 	const bool validateInput(float validate);
-	void withdraw(float withdrawal);
+	virtual void withdraw(float withdrawal);
 	void deposit(float deposit);
 	std::string generateAccountNumber();
 

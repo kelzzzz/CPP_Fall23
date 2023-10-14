@@ -32,15 +32,13 @@ std::string GenericAccount::getAccNum()
 
 const bool GenericAccount::validateBalance(float validate)
 {
+    std::cout << "Attempting to withdraw $" << validate << "\n";
     if (this->balance >= validate) {
         return true;
     }
     else {
-        std::cout << "Attempting to withdraw $" << validate << "\n";
         std::cout << "Insufficient funds.\n";
-        std::cout << "You will be charged a $0.50 overdraft fee.\n";
-        this->balance -= 0.50;
-        return true;
+        return false;
     }
 }
 
