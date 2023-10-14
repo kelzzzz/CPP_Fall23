@@ -1,0 +1,7 @@
+﻿  CheckingAccount.cpp
+  GenericAccount.cpp
+  SavingsAccount.cpp
+  Lab_06.cpp
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_06\Lab_06.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Lab_06.vcxproj -> C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_06\x64\Debug\Lab_06.exe

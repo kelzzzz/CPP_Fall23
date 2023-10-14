@@ -104,10 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_06\Accounts;%(AdditionalLibraryDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_06\Accounts;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,7 +129,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Accounts\GenericAccount.cpp" />
+    <ClCompile Include="Accounts\SavingsAccount.cpp" />
+    <ClCompile Include="Accounts\CheckingAccount.cpp" />
     <ClCompile Include="Lab_06.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Accounts\CheckingAccount.h" />
+    <ClInclude Include="Accounts\GenericAccount.h" />
+    <ClInclude Include="Accounts\SavingsAccount.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
