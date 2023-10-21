@@ -9,11 +9,14 @@ SavingsAccount::SavingsAccount(float startingAmount) {
     this->balance += startingAmount;
     strcpy_s(accNum, generateAccountNumber().c_str());
 }
-void SavingsAccount::print() {
-    std::cout << "########################\n";
-    std::cout << std::fixed << std::setprecision(2);
-    std::cout << "Savings Account Object:\n Account Number: #" << this->getAccNum() << "\n";
-    std::cout << "------------------------------------\n";
-    std::cout << "Current Account Balance: $" << this->getBalance() << "\n";
-
+std::string SavingsAccount::print() {
+    std::string str;
+    str.append("Savings Account Object:\n Account Number: #");
+    str.append(this->getAccNum());
+    str.append("\n");
+    str.append("------------------------------------\n");
+    str.append("Current Account Balance: $");
+    str.append(std::to_string(this->getBalance()));
+    str.append("\n");
+    return str;
 }

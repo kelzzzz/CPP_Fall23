@@ -2,7 +2,7 @@
 class CheckingAccount : public GenericAccount {
 public:
 	CheckingAccount(float startingBalance);
-	void print();
+	std::string print();
 	void withdraw(float withdrawal);
 private:
 };

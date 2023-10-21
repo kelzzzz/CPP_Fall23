@@ -12,13 +12,17 @@ GenericAccount::GenericAccount(float startingAmount) {
     strcpy_s(accNum, generateAccountNumber().c_str());
 }
 
-void GenericAccount::print()
+std::string GenericAccount::print()
 {
-    std::cout << "########################\n";
-    std::cout << std::fixed << std::setprecision(2);
-    std::cout << "Generic Account Object:\n Account Number: #" << getAccNum() << "\n";
-    std::cout << "------------------------------------\n";
-    std::cout << "Current Account Balance: $" << getBalance() << "\n";
+    std::string str;
+    str.append("Generic Account Object:\n Account Number: #");
+    str.append(this->getAccNum());
+    str.append("\n");
+    str.append("------------------------------------\n");
+    str.append("Current Account Balance: $");
+    str.append(std::to_string(this->getBalance()));
+    str.append("\n");
+    return str;
 }
 
 const float GenericAccount::getBalance() {

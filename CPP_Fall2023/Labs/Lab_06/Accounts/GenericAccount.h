@@ -8,7 +8,7 @@ public:
 	GenericAccount(float startingAmount);
 
 	//virtual
-	virtual void print();
+	virtual std::string print();
 
 	//methods - get
 	const float getBalance();
