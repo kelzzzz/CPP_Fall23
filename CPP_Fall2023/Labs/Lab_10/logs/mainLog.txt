@@ -1,0 +1,81 @@
+[2023-11-11 20:56:56.973] [mainLogger] [info] Main logger created.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 1 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 2 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 3 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 4 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 5 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 6 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 7 to queue.
+[2023-11-11 20:56:56.974] [mainLogger] [info] Added 8 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 9 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 10 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 11 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 12 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 13 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 14 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 15 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 16 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 17 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 18 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 19 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 20 to queue.
+[2023-11-11 20:56:56.975] [mainLogger] [info] Added 21 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 22 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 23 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 24 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 25 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 26 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 27 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 28 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 29 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 30 to queue.
+[2023-11-11 20:56:56.976] [mainLogger] [info] Added 31 to queue.
+[2023-11-11 20:56:56.977] [mainLogger] [info] Added 32 to queue.
+[2023-11-11 20:56:56.977] [mainLogger] [info] Added 33 to queue.
+[2023-11-11 20:56:56.977] [mainLogger] [info] Added 34 to queue.
+[2023-11-11 20:56:56.978] [mainLogger] [info] Added 35 to queue.
+[2023-11-11 20:56:56.978] [mainLogger] [info] Added 36 to queue.
+[2023-11-11 20:56:56.979] [mainLogger] [info] Added 37 to queue.
+[2023-11-11 20:56:56.979] [mainLogger] [info] Added 38 to queue.
+[2023-11-11 20:56:56.979] [mainLogger] [info] Added 39 to queue.
+[2023-11-11 20:56:56.979] [mainLogger] [info] Added 40 to queue.
+[2023-11-11 20:56:57.015] [mainLogger] [info] Handler B has handled item 1
+[2023-11-11 20:56:57.061] [mainLogger] [info] Handler C has handled item 2
+[2023-11-11 20:56:57.093] [mainLogger] [info] Handler B has handled item 3
+[2023-11-11 20:56:57.109] [mainLogger] [info] Handler C has handled item 4
+[2023-11-11 20:56:57.139] [mainLogger] [info] Handler C has handled item 5
+[2023-11-11 20:56:57.187] [mainLogger] [info] Handler B has handled item 6
+[2023-11-11 20:56:57.234] [mainLogger] [info] Handler B has handled item 7
+[2023-11-11 20:56:57.282] [mainLogger] [info] Handler B has handled item 8
+[2023-11-11 20:56:57.314] [mainLogger] [info] Handler D has handled item 9
+[2023-11-11 20:56:57.346] [mainLogger] [info] Handler D has handled item 10
+[2023-11-11 20:56:57.362] [mainLogger] [info] Handler D has handled item 11
+[2023-11-11 20:56:57.408] [mainLogger] [info] Handler C has handled item 12
+[2023-11-11 20:56:57.440] [mainLogger] [info] Handler A has handled item 13
+[2023-11-11 20:56:57.486] [mainLogger] [info] Handler B has handled item 14
+[2023-11-11 20:56:57.534] [mainLogger] [info] Handler C has handled item 15
+[2023-11-11 20:56:57.581] [mainLogger] [info] Handler D has handled item 16
+[2023-11-11 20:56:57.611] [mainLogger] [info] Handler D has handled item 17
+[2023-11-11 20:56:57.642] [mainLogger] [info] Handler B has handled item 18
+[2023-11-11 20:56:57.674] [mainLogger] [info] Handler D has handled item 19
+[2023-11-11 20:56:57.704] [mainLogger] [info] Handler D has handled item 20
+[2023-11-11 20:56:57.720] [mainLogger] [info] Handler D has handled item 21
+[2023-11-11 20:56:57.751] [mainLogger] [info] Handler C has handled item 22
+[2023-11-11 20:56:57.782] [mainLogger] [info] Handler B has handled item 23
+[2023-11-11 20:56:57.828] [mainLogger] [info] Handler B has handled item 24
+[2023-11-11 20:56:57.859] [mainLogger] [info] Handler B has handled item 25
+[2023-11-11 20:56:57.906] [mainLogger] [info] Handler D has handled item 26
+[2023-11-11 20:56:57.938] [mainLogger] [info] Handler C has handled item 27
+[2023-11-11 20:56:57.984] [mainLogger] [info] Handler B has handled item 28
+[2023-11-11 20:56:58.016] [mainLogger] [info] Handler D has handled item 29
+[2023-11-11 20:56:58.032] [mainLogger] [info] Handler B has handled item 30
+[2023-11-11 20:56:58.078] [mainLogger] [info] Handler A has handled item 31
+[2023-11-11 20:56:58.109] [mainLogger] [info] Handler C has handled item 32
+[2023-11-11 20:56:58.140] [mainLogger] [info] Handler A has handled item 33
+[2023-11-11 20:56:58.172] [mainLogger] [info] Handler A has handled item 34
+[2023-11-11 20:56:58.203] [mainLogger] [info] Handler A has handled item 35
+[2023-11-11 20:56:58.251] [mainLogger] [info] Handler C has handled item 36
+[2023-11-11 20:56:58.266] [mainLogger] [info] Handler C has handled item 37
+[2023-11-11 20:56:58.296] [mainLogger] [info] Handler C has handled item 38
+[2023-11-11 20:56:58.328] [mainLogger] [info] Handler C has handled item 39
+[2023-11-11 20:56:58.359] [mainLogger] [info] Handler B has handled item 40
