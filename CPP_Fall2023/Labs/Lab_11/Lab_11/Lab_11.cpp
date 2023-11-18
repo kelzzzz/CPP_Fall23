@@ -70,9 +70,30 @@ void readFileInToArray(std::string filename, int fillarr[])
     file.close();
     logger->info("Retrieved {} items from dataset.", counter);
 
+    std::string loggerArr = "[";
+    for (int i = 0; i < 10; i++) {
+        loggerArr.append(std::to_string(fillarr[i]));
+        if (i != 9) {
+            loggerArr.append(", ");
+        }
+        else {
+            loggerArr.append("]");
+        }
+    }
+    logger->info(loggerArr);
     std::sort(fillarr, fillarr + 10);
-
-    logger->info("Sorted array.");
+    logger->info("Sorted array -->");
+    std::string sortedLoggerArr = "[";
+    for (int i = 0; i < 10; i++) {
+        sortedLoggerArr.append(std::to_string(fillarr[i]));
+        if (i != 9) {
+            sortedLoggerArr.append(", ");
+        }
+        else {
+            sortedLoggerArr.append("]");
+        }
+    }
+    logger->info(sortedLoggerArr);
 }
 
 std::string binarySearch(int arr[], int target)

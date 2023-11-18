@@ -1,0 +1,66 @@
+[2023-11-18 13:32:42.317] [mainLogger] [info] --------BUILD--------
+[2023-11-18 13:32:42.318] [mainLogger] [info]  Main logger created.
+[2023-11-18 13:32:42.318] [mainLogger] [info] Retrieved 10 items from dataset.
+[2023-11-18 13:32:42.318] [mainLogger] [info] [22, 33, 2, 3, 4, 1, 55, 102, 99, 6]
+[2023-11-18 13:32:42.318] [mainLogger] [info] Sorted array -->
+[2023-11-18 13:32:42.318] [mainLogger] [info] [1, 2, 3, 4, 6, 22, 33, 55, 99, 102]
+[2023-11-18 13:32:44.117] [mainLogger] [info] Attempting to search for 22
+[2023-11-18 13:32:44.117] [mainLogger] [info] Target 22 was found at index 5 after 1 loop(s).
+[2023-11-18 13:32:47.245] [mainLogger] [info] Attempting to search for 99
+[2023-11-18 13:32:47.245] [mainLogger] [info] Middle lower than 99
+[2023-11-18 13:32:47.245] [mainLogger] [info] Set lowest to index 6
+[2023-11-18 13:32:47.245] [mainLogger] [info] New middle is index 5
+[2023-11-18 13:32:47.245] [mainLogger] [info] Target 99 was found at index 8 after 2 loop(s).
+[2023-11-18 13:33:12.718] [mainLogger] [info] --------BUILD--------
+[2023-11-18 13:33:12.719] [mainLogger] [info]  Main logger created.
+[2023-11-18 13:33:12.720] [mainLogger] [info] Retrieved 10 items from dataset.
+[2023-11-18 13:33:12.720] [mainLogger] [info] [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[2023-11-18 13:33:12.720] [mainLogger] [info] Sorted array -->
+[2023-11-18 13:33:12.720] [mainLogger] [info] [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[2023-11-18 13:33:14.837] [mainLogger] [info] Attempting to search for 10
+[2023-11-18 13:33:14.837] [mainLogger] [info] Middle lower than 10
+[2023-11-18 13:33:14.837] [mainLogger] [info] Set lowest to index 6
+[2023-11-18 13:33:14.837] [mainLogger] [info] New middle is index 5
+[2023-11-18 13:33:14.837] [mainLogger] [info] Middle lower than 10
+[2023-11-18 13:33:14.837] [mainLogger] [info] Set lowest to index 9
+[2023-11-18 13:33:14.837] [mainLogger] [info] New middle is index 8
+[2023-11-18 13:33:14.837] [mainLogger] [info] Target 10 was found at index 9 after 3 loop(s).
+[2023-11-18 13:33:16.877] [mainLogger] [info] Attempting to search for 9
+[2023-11-18 13:33:16.877] [mainLogger] [info] Middle lower than 9
+[2023-11-18 13:33:16.877] [mainLogger] [info] Set lowest to index 6
+[2023-11-18 13:33:16.877] [mainLogger] [info] New middle is index 5
+[2023-11-18 13:33:16.877] [mainLogger] [info] Target 9 was found at index 8 after 2 loop(s).
+[2023-11-18 13:33:36.015] [mainLogger] [info] --------BUILD--------
+[2023-11-18 13:33:36.016] [mainLogger] [info]  Main logger created.
+[2023-11-18 13:33:36.020] [mainLogger] [info] Retrieved 9 items from dataset.
+[2023-11-18 13:33:36.020] [mainLogger] [info] [22, 33, 44, 55, 66, 77, 88, 99, 102, -858993460]
+[2023-11-18 13:33:36.020] [mainLogger] [info] Sorted array -->
+[2023-11-18 13:33:36.020] [mainLogger] [info] [-858993460, 22, 33, 44, 55, 66, 77, 88, 99, 102]
+[2023-11-18 13:33:38.590] [mainLogger] [info] Attempting to search for 22
+[2023-11-18 13:33:38.590] [mainLogger] [info] Middle higher than 22
+[2023-11-18 13:33:38.590] [mainLogger] [info] Set highest to index 4
+[2023-11-18 13:33:38.590] [mainLogger] [info] New middle is index 5
+[2023-11-18 13:33:38.590] [mainLogger] [info] Middle higher than 22
+[2023-11-18 13:33:38.590] [mainLogger] [info] Set highest to index 1
+[2023-11-18 13:33:38.590] [mainLogger] [info] New middle is index 2
+[2023-11-18 13:33:38.590] [mainLogger] [info] Middle lower than 22
+[2023-11-18 13:33:38.590] [mainLogger] [info] Set lowest to index 1
+[2023-11-18 13:33:38.590] [mainLogger] [info] New middle is index 0
+[2023-11-18 13:33:38.590] [mainLogger] [info] Target 22 was found at index 1 after 4 loop(s).
+[2023-11-18 13:34:42.875] [mainLogger] [info] --------BUILD--------
+[2023-11-18 13:34:42.876] [mainLogger] [info]  Main logger created.
+[2023-11-18 13:34:42.880] [mainLogger] [info] Retrieved 10 items from dataset.
+[2023-11-18 13:34:42.880] [mainLogger] [info] [-1, -2, 99, 100, 12, 13, 14, 15, 16, 17]
+[2023-11-18 13:34:42.880] [mainLogger] [info] Sorted array -->
+[2023-11-18 13:34:42.880] [mainLogger] [info] [-2, -1, 12, 13, 14, 15, 16, 17, 99, 100]
+[2023-11-18 13:34:44.901] [mainLogger] [info] Attempting to search for -1
+[2023-11-18 13:34:44.901] [mainLogger] [info] Middle higher than -1
+[2023-11-18 13:34:44.901] [mainLogger] [info] Set highest to index 4
+[2023-11-18 13:34:44.901] [mainLogger] [info] New middle is index 5
+[2023-11-18 13:34:44.901] [mainLogger] [info] Middle higher than -1
+[2023-11-18 13:34:44.901] [mainLogger] [info] Set highest to index 1
+[2023-11-18 13:34:44.901] [mainLogger] [info] New middle is index 2
+[2023-11-18 13:34:44.901] [mainLogger] [info] Middle lower than -1
+[2023-11-18 13:34:44.901] [mainLogger] [info] Set lowest to index 1
+[2023-11-18 13:34:44.901] [mainLogger] [info] New middle is index 0
+[2023-11-18 13:34:44.901] [mainLogger] [info] Target -1 was found at index 1 after 4 loop(s).
