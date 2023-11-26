@@ -1,0 +1,81 @@
+[2023-11-25 19:46:46.156] [mainLogger] [info] --------BUILD--------
+[2023-11-25 19:46:46.157] [mainLogger] [info]  Main logger created.
+[2023-11-25 19:46:46.157] [mainLogger] [info] Assigned T1 to Processor 1.
+[2023-11-25 19:46:46.157] [mainLogger] [info] Assigned T3 to Processor 2.
+[2023-11-25 19:46:48.159] [mainLogger] [info] Processor 1 processed T1 in 2 seconds.
+[2023-11-25 19:46:48.159] [mainLogger] [info] Processor 2 processed T3 in 2 seconds.
+[2023-11-25 19:46:48.159] [mainLogger] [info] Assigned T4 to Processor 1.
+[2023-11-25 19:46:48.159] [mainLogger] [info] Assigned T5 to Processor 2.
+[2023-11-25 19:46:50.163] [mainLogger] [info] Processor 1 processed T4 in 1.0110000000000001 seconds.
+[2023-11-25 19:46:50.163] [mainLogger] [info] Processor 2 processed T5 in 2.003 seconds.
+[2023-11-25 19:46:50.163] [mainLogger] [info] T6 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:46:50.163] [mainLogger] [info] T7 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:46:50.163] [mainLogger] [info] T8 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:46:50.163] [mainLogger] [info] Assigned T2 to Processor 1.
+[2023-11-25 19:46:50.666] [mainLogger] [info] Processor 1 processed T2 in 0.502 seconds.
+[2023-11-25 19:46:50.667] [mainLogger] [info] T9 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:46:50.667] [mainLogger] [info] Assigned T6 to Processor 1.
+[2023-11-25 19:46:50.667] [mainLogger] [info] Assigned T7 to Processor 2.
+[2023-11-25 19:46:51.175] [mainLogger] [info] Processor 1 processed T6 in 0.507 seconds.
+[2023-11-25 19:46:51.175] [mainLogger] [info] Processor 2 processed T7 in 0.507 seconds.
+[2023-11-25 19:46:51.175] [mainLogger] [info] Assigned T8 to Processor 1.
+[2023-11-25 19:46:51.175] [mainLogger] [info] Assigned T9 to Processor 2.
+[2023-11-25 19:46:52.188] [mainLogger] [info] Processor 1 processed T8 in 0.507 seconds.
+[2023-11-25 19:46:52.188] [mainLogger] [info] Processor 2 processed T9 in 1.012 seconds.
+[2023-11-25 19:46:52.188] [mainLogger] [info] Total elapsed handling time of Processor 1: 4.527s
+[2023-11-25 19:46:52.188] [mainLogger] [info] Total elapsed handling time of Processor 2: 5.522s
+[2023-11-25 19:46:52.188] [mainLogger] [info] Total program elapsed runtime: 6.032s
+[2023-11-25 19:47:02.728] [mainLogger] [info] --------BUILD--------
+[2023-11-25 19:47:02.728] [mainLogger] [info]  Main logger created.
+[2023-11-25 19:47:02.728] [mainLogger] [info] Assigned T1 to Processor 1.
+[2023-11-25 19:47:02.728] [mainLogger] [info] Assigned T3 to Processor 2.
+[2023-11-25 19:47:04.737] [mainLogger] [info] Processor 1 processed T1 in 2.007 seconds.
+[2023-11-25 19:47:04.737] [mainLogger] [info] Processor 2 processed T3 in 2.007 seconds.
+[2023-11-25 19:47:04.737] [mainLogger] [info] Assigned T4 to Processor 1.
+[2023-11-25 19:47:04.737] [mainLogger] [info] Assigned T5 to Processor 2.
+[2023-11-25 19:47:06.738] [mainLogger] [info] Processor 1 processed T4 in 1.004 seconds.
+[2023-11-25 19:47:06.738] [mainLogger] [info] Processor 2 processed T5 in 2 seconds.
+[2023-11-25 19:47:06.738] [mainLogger] [info] T6 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:06.738] [mainLogger] [info] T7 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:06.738] [mainLogger] [info] T8 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:06.738] [mainLogger] [info] Assigned T2 to Processor 1.
+[2023-11-25 19:47:07.245] [mainLogger] [info] Processor 1 processed T2 in 0.506 seconds.
+[2023-11-25 19:47:07.245] [mainLogger] [info] T9 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:07.245] [mainLogger] [info] Assigned T6 to Processor 1.
+[2023-11-25 19:47:07.245] [mainLogger] [info] Assigned T7 to Processor 2.
+[2023-11-25 19:47:07.749] [mainLogger] [info] Processor 1 processed T6 in 0.503 seconds.
+[2023-11-25 19:47:07.749] [mainLogger] [info] Processor 2 processed T7 in 0.503 seconds.
+[2023-11-25 19:47:07.749] [mainLogger] [info] Assigned T8 to Processor 1.
+[2023-11-25 19:47:07.749] [mainLogger] [info] Assigned T9 to Processor 2.
+[2023-11-25 19:47:08.759] [mainLogger] [info] Processor 1 processed T8 in 0.503 seconds.
+[2023-11-25 19:47:08.759] [mainLogger] [info] Processor 2 processed T9 in 1.0090000000000001 seconds.
+[2023-11-25 19:47:08.759] [mainLogger] [info] Total elapsed handling time of Processor 1: 4.523s
+[2023-11-25 19:47:08.759] [mainLogger] [info] Total elapsed handling time of Processor 2: 5.519s
+[2023-11-25 19:47:08.759] [mainLogger] [info] Total program elapsed runtime: 6.031s
+[2023-11-25 19:47:20.092] [mainLogger] [info] --------BUILD--------
+[2023-11-25 19:47:20.092] [mainLogger] [info]  Main logger created.
+[2023-11-25 19:47:20.092] [mainLogger] [info] Assigned T1 to Processor 1.
+[2023-11-25 19:47:20.092] [mainLogger] [info] Assigned T3 to Processor 2.
+[2023-11-25 19:47:22.095] [mainLogger] [info] Processor 1 processed T1 in 2.001 seconds.
+[2023-11-25 19:47:22.095] [mainLogger] [info] Processor 2 processed T3 in 2.001 seconds.
+[2023-11-25 19:47:22.095] [mainLogger] [info] Assigned T4 to Processor 1.
+[2023-11-25 19:47:22.095] [mainLogger] [info] Assigned T5 to Processor 2.
+[2023-11-25 19:47:24.108] [mainLogger] [info] Processor 1 processed T4 in 1.0070000000000001 seconds.
+[2023-11-25 19:47:24.108] [mainLogger] [info] Processor 2 processed T5 in 2.011 seconds.
+[2023-11-25 19:47:24.108] [mainLogger] [info] T6 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:24.108] [mainLogger] [info] T7 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:24.108] [mainLogger] [info] T8 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:24.108] [mainLogger] [info] Assigned T2 to Processor 1.
+[2023-11-25 19:47:24.613] [mainLogger] [info] Processor 1 processed T2 in 0.504 seconds.
+[2023-11-25 19:47:24.613] [mainLogger] [info] T9 requirements not yet met. Pushing to the back of the queue and looking for something to assign.
+[2023-11-25 19:47:24.613] [mainLogger] [info] Assigned T6 to Processor 1.
+[2023-11-25 19:47:24.613] [mainLogger] [info] Assigned T7 to Processor 2.
+[2023-11-25 19:47:25.119] [mainLogger] [info] Processor 1 processed T6 in 0.505 seconds.
+[2023-11-25 19:47:25.119] [mainLogger] [info] Processor 2 processed T7 in 0.504 seconds.
+[2023-11-25 19:47:25.119] [mainLogger] [info] Assigned T8 to Processor 1.
+[2023-11-25 19:47:25.119] [mainLogger] [info] Assigned T9 to Processor 2.
+[2023-11-25 19:47:26.131] [mainLogger] [info] Processor 1 processed T8 in 0.506 seconds.
+[2023-11-25 19:47:26.131] [mainLogger] [info] Processor 2 processed T9 in 1.0110000000000001 seconds.
+[2023-11-25 19:47:26.131] [mainLogger] [info] Total elapsed handling time of Processor 1: 4.523s
+[2023-11-25 19:47:26.131] [mainLogger] [info] Total elapsed handling time of Processor 2: 5.527s
+[2023-11-25 19:47:26.131] [mainLogger] [info] Total program elapsed runtime: 6.04s
