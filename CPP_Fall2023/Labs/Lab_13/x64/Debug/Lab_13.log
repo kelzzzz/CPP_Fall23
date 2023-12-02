@@ -1,0 +1,5 @@
+﻿  BinaryTree.cpp
+  Lab_13.cpp
+  Generating Code...
+C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_13\Lab_13.cpp(25): warning C4715: 'takeInput': not all control paths return a value
+  Lab_13.vcxproj -> C:\Users\kcavin\source\repos\CPP_Fall23\CPP_Fall2023\Labs\Lab_13\x64\Debug\Lab_13.exe
